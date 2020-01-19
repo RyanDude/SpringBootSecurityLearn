@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    name: dev
+    url: jdbc:mysql://localhost:3306/jguo?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: guoguo841268
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+mybatis:
+  mapper-locations: classpath:Mappers/*.xml
+  type-aliases-package: com.example.demo.domain
+server:
+  port: 8080
